@@ -124,7 +124,7 @@ mysqli_close($link);
     reply_to($chatId,$message_id,$keyboard,$antispam);
     exit();
     }
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@ANDREAYT02</a></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -197,7 +197,7 @@ $che = bannedbin($bin);
     edit_message($chatId,$message_id_1,$keyboard, "<b>❌BIN BANNED</b>");
     exit();
     }
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@ANDREAYT02</a></b>");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -230,7 +230,7 @@ $error = trim(strip_tags(getStr($result,'"error_messages":"Authorize.Net CIM Gat
 curl_close($ch);
 $ccc = multiexplode(array(". ", "."), $error)[0];
 $res = multiexplode(array(". ", "."), $error)[1];
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <a href='tg://user?id=1317173146'>@ANDREAYT02</a></b>");
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // success":false,"error":true,"
 if (strpos($result, 'error":false')){
