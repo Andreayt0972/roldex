@@ -99,7 +99,7 @@ if(empty($client)){
 }
   $git = substr($message, 5);
   if(empty($git)){
-reply_to($chatId,$message_id,$keyboard,"<b>GIVE ME A USER NAME %0AEX: <code>!git r0ld3x</code></b>");
+reply_to($chatId,$message_id,$keyboard,"<b>GIVE ME A USER NAME %0AEX: <code>!git ANDREAYT02</code></b>");
 exit();
 }
    $curl = curl_init();
@@ -155,7 +155,7 @@ if ($gusername) {
         reply_to($chatId,$message_id,$keyboard,$gitresult);
 }
 else {
-           reply_to($chatId,$message_id,$keyboard,"<b>Sorry! User Not Found %0AInvalid github username  %0AEX: <code>!git r0ld3x</code></b>");
+           reply_to($chatId,$message_id,$keyboard,"<b>Sorry! User Not Found %0AInvalid github username  %0AEX: <code>!git ANDREAYT02</code></b>");
 }
     }
  
