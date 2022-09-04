@@ -37,7 +37,7 @@ if(strlen($strlen1 > 2)) {
 $ano = $cvv; 
 $cvv = $mes;
 $mes = $ano1;}
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ sendMessage1($cc_code);
 if(empty($result) or empty($ccc) or empty($code) or empty($res)){
 $result = urlencode("<b>
 GATE --> STRIPE - CHARGE 10INR
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@ANDREAYT02</code>
 Result ->> Unknown error
 Message ->> Check again
 Bin Info ->> $bincap4-$bincap3-$bincap5
@@ -220,7 +220,7 @@ Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[$role]
 Credit Left ->> ${balance}💰
-Bot By --> <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+Bot By --> <a href='tg://user?id=1317173146'>@ANDREAYT02</a></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     $timest = time();
 $link = mysqli_connect("localhost", "roldexco_root", "z8yT4vaO08", "roldexco_demo");
@@ -231,13 +231,13 @@ exit();
 }
 $result = urlencode("<b>
 GATE --><i> STRIPE - CHARGE 10INR</i>
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@ANDREAYT02</code>
 Code ->> $code
 Result ->> $status
 Message ->> $cc_code
 Bin Info ->> $bincap4-$bincap3-$bincap5
 Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
-Bot By --> <a href='tg://user?id=1317173146'>@r0ld3x</a></b>");
+Bot By --> <a href='tg://user?id=1317173146'>@V</a></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
 }
 ?>
