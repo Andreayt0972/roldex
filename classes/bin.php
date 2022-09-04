@@ -49,7 +49,7 @@ $binresult = urlencode("<b>══════ 『 ROLDEX 』══════
 Bin: <code>$bin</code>
 Brand: $bincap3
 Level: $bincap4
-Bank: $roldex
+Bank: $ANDREAYT02
 Country: $bincap2 {$flag($bincap2)}
 Type: $bincap5
 Checked By @$username </b>");
