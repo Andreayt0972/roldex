@@ -5,7 +5,7 @@ if(strpos($message, '!vbv') === 0 or strpos($message, '/vbv') === 0 or strpos($m
 // exit();
 // }
     $keyboard = [
-    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/r0ld3x'],]]];
+    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/ANDREAYT02'],]]];
 $keyboard = json_encode($keyboard);
 checkrole($chatId,$message_id,$keyboard,$nopre,$gId);
 $starttime = microtime(true);
@@ -87,7 +87,7 @@ if(strlen($strlen1 > 2)) {
 $ano = $cvv; 
 $cvv = $mes;
 $mes = $ano1;}
-$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+$sss = reply_to($chatId,$message_id,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> □□□□□ 0%[🟥] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 $respon = json_decode($sss, TRUE);
 $message_id_1 = $respon['result']['message_id'];
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ curl_close($ch);
     // $socks = array_rand($ip);
     // $socks5 = $ip[$socks];
 
-edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@r0ld3x</code></b>");
+edit_message($chatId,$message_id_1,$keyboard,"<b> CC ->> <code>$cc|$mes|$ano|$cvv</code> %0APROCESS ->> ■■□□□ 40%[🟧] %0ATIME ->> {$mytime($starttime)}s %0ACHECKING BY ->> <a href='tg://user?id=$gId'>@$username</a> %0ABOT BY :- <code>@ANDREAYT02</code></b>");
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -394,7 +394,7 @@ Bin Info ->> $bincap4-$bincap3-$bincap5
 Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[<i>$role</i>]
-Bot By --> <code>@r0ld3x</code></b>");
+Bot By --> <code>@ANDREAYT02</code></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     $timest = time();
 
@@ -430,7 +430,7 @@ Bin Info ->> $bincap4-$bincap3-$bincap5
 Bank Info ->> $roldex-$bincap2-{$flag($bincap2)}
 Time ->> {$mytime($starttime)}s
 Checked By ->> <a href='tg://user?id=$gId'>@${username}</a>[<i>$role</i>]
-Bot By --> <code>@r0ld3x</code></b>");
+Bot By --> <code>@ANDREAYT02</code></b>");
 edit_message($chatId,$message_id_1,$keyboard, $result);
     rest($list);
     $timest = time();
