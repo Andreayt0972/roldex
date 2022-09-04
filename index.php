@@ -13,7 +13,7 @@ $buyit = urlencode("<b>Use <code>.credits</code> Know Your Available Credits
 -> 300 CREDITS + PREMIUM ACCESS - 10$
 -> 500 CREDITS + PREMIUM ACCESS - 15$
 -> 1000 CREDITS + PREMIUM ACCESS - 25$
->> PING <code>@r0ld3x</code> For Purchasing
+>> PING <code>@ANDREAYT02</code> For Purchasing
 Note -⟩ We Only Accept Upi And Crytpo</b>");
 
 $nopre = urlencode("<b>YOU NEED TO BE PREMIUM TO USE THIS COMMAND.
@@ -202,12 +202,12 @@ $premium_id = (array("1792903396","1317173146"));
 $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298504199","-1001434792768"));
         $keyboard = json_encode([
 'inline_keyboard' => [
-[['text' => "OWNER", 'url' => "https://t.me/r0ld3x"],]
+[['text' => "OWNER", 'url' => "https://t.me/andreayt02"],]
 ]]);
                 $keyboard1 = json_encode([
 'inline_keyboard' => [
-[['text' => "CHANNEL", 'url' => "https://t.me/RoldexVerse"],
-['text' => "GROUP", 'url' => "https://t.me/RoldexVerseChats"],]
+[['text' => "CHANNEL", 'url' => "https://t.me/andreachk"],
+['text' => "GROUP", 'url' => "https://t.me/andreachkChat"],]
 ]]);
 
 // if(!in_array($chatId, $premiumgp)){
@@ -226,7 +226,7 @@ $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298
 // 
 // You Need To Join My Update Channel To Get Regular Updates
 // 
-// Made With ♥️ By @r0ld3x
+// Made With ♥️ By @ANDREAYT02
 // USE /start AFTER JOIN",
  // 'parse_mode'=>'HTML',
  // 'reply_markup' =>  $keyboard1,
@@ -239,7 +239,7 @@ $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298
 // 
 // You Need To Join My Update Channel To Get Regular Updates
 // 
- // Made With ♥️ By @r0ld3x And @RoldexVerse
+ // Made With ♥️ By @ANDREAYT02 
 // 
 // USE /start AFTER JOIN",
  // 'parse_mode'=>'HTML',
@@ -262,7 +262,7 @@ $premiumgp = (array("-1001320804136","-1001552296979","-1001300027599","-1001298
 
 if(strpos($message, '!key') === 0 or strpos($message, '/key') === 0 or strpos($message, '.key') === 0){
     $keyboard = [
-    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/r0ld3x'],]]];
+    'inline_keyboard' => [[['text' => 'Features', 'callback_data' => 'paid'], ['text' => 'Buy', 'callback_data' => 'buy'], ['text' => 'Buy Now', 'url' => 'https://t.me/ANDREAYT02'],]]];
 $keyboard = json_encode($keyboard);
 checkrole($chatId,$message_id,$keyboard,$nopre,$gId);
 sendaction($chatId, typing);
@@ -296,15 +296,15 @@ $headers[] = 'Content-Type: application/x-www-form-urlencoded';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $result = curl_exec($ch);
 if (strpos($result, 'api_key_expired')){
-edit_message($chatId,$message_id_1,$keyboard, "<b>? DEAD KEY</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> EXPIRED KEY%0A%0A<b>Bot: @RoldexVerseBot </b>");
+edit_message($chatId,$message_id_1,$keyboard, "<b>? DEAD KEY</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> EXPIRED KEY%0A%0A<b>Bot: @ANDREACHKBOT </b>");
 }
 elseif (strpos($result, 'Invalid API Key provided')){
-edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A❌ DEAD KEY ❌</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> INVALID KEY%0A%0A<b>Bot: @RoldexVerseBot </b>");
+edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A❌ DEAD KEY ❌</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> INVALID KEY%0A%0A<b>Bot: @ANDREACHKBOT </b>");
 }
 elseif ((strpos($result, 'testmode_charges_only')) || (strpos($result, 'test_mode_live_card'))){
-edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A❌ DEAD KEY ❌</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> Testmode Charges Only%0A%0A<b>Bot: @RoldexVerseBot </b>");
+edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A❌ DEAD KEY ❌</b>%0A<u>KEY:</u> <code>$sec</code>%0A<u>REASON:</u> Testmode Charges Only%0A%0A<b>Bot: @ANDREACHKBOT </b>");
 }else{
-edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A✅LIVE KEY✅</b>%0A<u>KEY:</u> <code>${fii}xxxxxxxxxxxxxxxxx${newstring}</code>%0A<u>RESPONSE:</u> SK LIVE!!%0A%0A<b>Bot: @RoldexVerseBot</b>");
+edit_message($chatId,$message_id_1,$keyboard, "<b>═════════ 『 ROLDEX 』═════════%0A✅LIVE KEY✅</b>%0A<u>KEY:</u> <code>${fii}xxxxxxxxxxxxxxxxx${newstring}</code>%0A<u>RESPONSE:</u> SK LIVE!!%0A%0A<b>Bot: @ANDREACHKBOT</b>");
 // sleep(10);
 // edit_message($chatId,$message_id_1,$keyboard,"<b>DELETING SK KEY");
 deleteM($chatId,$message_id);
@@ -537,7 +537,7 @@ function edit_message($chatId,$message_id,$keyboard,$message) {
 }
 function editMessage ($chatId, $message,$message_id){
 global $botToken;
-$url = "https://api.telegram.org/bot".$botToken."/editMessageText?chat_id=".$chatId."&message_id=".$message_id."&text=••MASS CHECKER%0A".$message."%0A••• BOT BY: @RoldexVerse&parse_mode=HTML";
+$url = "https://api.telegram.org/bot".$botToken."/editMessageText?chat_id=".$chatId."&message_id=".$message_id."&text=••MASS CHECKER%0A".$message."%0A••• BOT BY: @ANDREAYT02&parse_mode=HTML";
 $result = file_get_contents($url);      
 echo $result.'<hr>';
 }
@@ -926,7 +926,7 @@ $sql = "INSERT INTO persons (userid, role, username, credits) VALUES ('$userId',
 $freeuser = urlencode("<b>HEY You dont have permission to use me here 
 <i> take premium access to use here</i></b>");
 $freeuser1 = urlencode("<b>HEY You dont have permission to use me here 
-<i>take group access from <code>@r0ld3x</code> to use here</i></b>");
+<i>take group access from <code>@ANDREAYT02</code> to use here</i></b>");
  
 $link = mysqli_connect("localhost", "root", "", "demo");
 $sql = "SELECT role FROM persons WHERE userid='$gId'";
